@@ -1,0 +1,196 @@
+/*
+   Copyright 2025 Timoh de Solarys
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+*/
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f0f8ff;
+}
+
+header {
+    background-color: #dcb253;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.hbtn {
+    font-size: 12px;
+}
+
+.box {
+    background-color: #fffbea;
+    border-left: 6px solid #f1c40f;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.module {
+    background-color: #d5f5e3;
+    border-color: #27ae60;
+}
+
+.exercise {
+    background-color: #fcf3cf;
+    border-color: #f1c40f;
+}
+
+.retenir {
+    border-color: #eeff01;
+    background-color: #f9f9ec;
+}
+
+.exemple {
+    border-color: #3498db;
+    background-color: #eaf4fc;
+}
+
+.attention {
+    border-color: #e74c3c;
+    background-color: #fdecea;
+}
+
+.culture {
+    border-color: #9b59b6;
+    background-color: #f4ecf7;
+}
+
+.revealable {
+    border-color: #f39c12;
+    background-color: #fff6e0;
+}
+
+.audio {
+  border-color: #1abc9c;
+  background-color: #e8fdfc;
+}
+
+.box.audio button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.box.audio button:hover {
+  background-color: #16a085;
+}
+
+.reveal-content {
+    display: none;
+    margin-top: 0.5em;
+    padding: 0.8em;
+    background-color: #fff;
+    border: 1px dashed #f39c12;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.vocabulary-table {
+    width: 90%;
+    margin: 1em auto;
+    border-collapse: collapse;
+}
+
+.vocabulary-table th, .vocabulary-table td {
+    border: 1px solid #bbb;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.vocabulary-table th {
+    background-color: #3498db;
+    color: white;
+}
+
+.interactif input {
+    border: none;
+    border-bottom: 2px solid #2980b9;
+    padding: 0.2em;
+    font-size: 1em;
+    width: 100px;
+    text-align: center;
+}
+
+.interactif input.correct {
+    border-color: green;
+}
+
+.interactif input.incorrect {
+    border-color: red;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.feedback {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 0.3em;
+}
+
+button {
+    background-color: #f1c40f;
+    color: #2c3e50;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #f39c12;
+    transform: scale(1.03);
+}
+
+button:active {
+    background-color: #d68910;
+    transform: scale(0.98);
+}
+
+#score-container {
+    font-weight: bold;
+    background-color: #ffffffcc;
+    border: 2px solid #27ae60;
+    color: #145a32;
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin-top: 0.5em;
+    border-radius: 6px;
+}
+
+hr {
+   border: none;
+   height: 5px;
+   background: linear-gradient(to right, #ccc, #999, #ccc);
+   margin: 2em;
+   border-radius: 4px;
+}

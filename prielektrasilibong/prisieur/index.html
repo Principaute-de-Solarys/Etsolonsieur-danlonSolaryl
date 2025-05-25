@@ -1,0 +1,171 @@
+<!--
+   Copyright 2025 Timoh de Solarys
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Etsolonsieur danlonSolaryl - Prisieur</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="icon" href="../../logo.png"/>
+</head>
+<body>
+	<!-- Alors data-show-answer="true" montre la solu -->
+    <header>Prielektrasilibong danlonSolaryl - Premier manuel interactif de la langue Solaryenne</header>
+
+    <div class="box module">
+        <h2>🧭 Prisieur : Découverte du vocabulaire</h2>
+        <p>Ce module vous aide à apprendre quelques mots simples en solaryen, nommés "mots outils".</p>
+		<p>Vous pourrez refaire les exercices autant de fois que vous souhaitez, le but est d'apprendre !</p>
+        <div id="score-container">Score : <span id="score">0</span> / <span id="total">0</span></div>
+    </div>
+	
+	<div class="box retenir">
+        <h3>📌 À retenir</h3>
+        <p>Il faut savoir que le solaryen utilise un système de déclinaisons. En effet, il y a la déclinaison "alpeur", "kog", "long" et "Solarys". La dernière regroupe tous les mots ayant un sens en lien avec l'imaginaire, le concept, la nation... Les mots outils suivant sont des mots venant de cette déclinaison.</p>
+        <p>Pourtant, même s'ils appartiennent à cette déclinaison, la plupart des mots outils ne se déclinent pas et restent au nominatif.</p>
+    </div>
+
+    <div class="box exercise">
+        <h3>✏️ Exercice 1 : La salutation</h3>
+		<p>Mettez dans les bonnes cases les traductions suivantes : bonsoir - bonjour - au revoir - bonne nuit</p>
+        <table class="vocabulary-table">
+            <thead>
+                <tr>
+                    <th>Solaryen</th>
+                    <th>Votre réponse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Soldys</td>
+                    <td class="interactif"><input type="text" data-correct="bonjour" /></td>
+                </tr>
+                <tr>
+                    <td>Oillvys</td>
+                    <td class="interactif"><input type="text" data-correct="au revoir" /></td>
+                </tr>
+                <tr>
+                    <td>Soladys</td>
+                    <td class="interactif"><input type="text" data-correct="bonne nuit" /></td>
+                </tr>
+                <tr>
+                    <td>Solbespys</td>
+                    <td class="interactif"><input type="text" data-correct="bonsoir" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+	
+    <div class="box culture">
+        <h3>🎲 Le saviez-vous ?</h3>
+        <p>Le mot "soladys" vient d'une erreur où le préfixe "ta-" a été confondu avec "a-". C'est ensuite resté comme ça, pour la prononciation plus simple "-la-"/"-lta-".</p>
+    </div>
+	
+    <div class="box revealable">
+        <h3>🧠 Pour aller plus loin</h3>
+        <p>Que veut dire "solvidys" en solaryen ?</p>
+        <button onclick="toggleReveal(this)">Voir la réponse</button>
+        <div class="reveal-content">C'est "bienvenue" ou "salutation"/"salut".</div>
+    </div>
+
+    <hr>
+	
+	<div class="box exercise">
+        <h3>✏️ Exercice 2 : La politesse</h3>
+        <p>Mettez dans les bonnes cases les traductions suivantes : palvamévaka - ong - iog - scong - asolog - vinvys - tayog</p>
+        <table class="vocabulary-table">
+            <thead>
+                <tr>
+                    <th>Français</th>
+                    <th>Votre réponse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Merci</td>
+                    <td class="interactif"><input type="text" data-correct="vinvys" /></td>
+                </tr>
+                <tr>
+                    <td>S'il te plaît</td>
+                    <td class="interactif"><input type="text" data-correct="palvamévaka" /></td>
+                </tr>
+                <tr>
+                    <td>Non</td>
+                    <td class="interactif"><input type="text" data-correct="tayog" /></td>
+                </tr>
+                <tr>
+                    <td>De rien</td>
+                    <td class="interactif"><input type="text" data-correct="asolog" /></td>
+                </tr>
+                <tr>
+                    <td>Ok</td>
+                    <td class="interactif"><input type="text" data-correct="ong" /></td>
+                </tr>
+                <tr>
+                    <td>Pardon</td>
+                    <td class="interactif"><input type="text" data-correct="scong" /></td>
+                </tr>
+                <tr>
+                    <td>Oui</td>
+                    <td class="interactif"><input type="text" data-correct="iog" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="box audio">
+        <h3>🔊 Prononciation</h3>
+        <p>Écoutez la prononciation de palvamévaka :</p>
+        <button onclick="playAudio(this)" data-audio="../../audios/palvamévaka.mp3">▶️ Écouter</button>
+    </div>
+
+    <div class="box attention">
+        <h3>⚠️ Attention</h3>
+        <p>Toutes les lettres se prononcent sauf certaines exceptions :</p>
+        <ul>
+            <li>"eu" = [œ]</li>
+            <li>"an" = [ã] SAUF si c'est après un "p" ou un "l"</li>
+            <li>"ou" = [u]</li>
+            <li>
+                Les "¨" :
+                <ul>
+                    <li>"ä" = [a:]</li>
+                    <li>"ë" = [e:]</li>
+                    <li>"ÿ" = [i:]</li>
+                    <li>"ü" = [y:] ou [u:]</li>
+                    <li>"ï" = [i:]</li>
+                    <li>"ö" = [o:]</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="box exemple">
+        <h3>💡 Exemple</h3>
+        <p><strong>ba</strong> signifie « lumière » en solaryen classique.</p>
+    </div>
+
+    <p style="text-align: center;"><button onclick="checkAnswers()">Vérifier mes réponses</button></p>
+
+    <footer>
+        © 2025 Etsolonsieur danlonSolaryl - Prielektrasilibong
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
