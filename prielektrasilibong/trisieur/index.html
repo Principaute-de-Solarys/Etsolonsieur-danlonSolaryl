@@ -1,0 +1,213 @@
+<!--
+   Copyright 2025 Timoh de Solarys
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Etsolonsieur danlonSolaryl - Trisieur</title>
+    <link rel="stylesheet" href="../../style.css"/>
+    <link rel="icon" href="../../logo.png"/>
+</head>
+<body>
+	<!-- Alors data-show-answer="true" montre la solu -->
+    <header>Prielektrasilibong danlonSolaryl - Premier manuel interactif de la langue Solaryenne</header>
+
+    <div class="box module">
+        <h2>🧭 Trisieur : Découverte des phrases</h2>
+        <p>Ce module est plus exigeant puisqu'il s'agit des phrases utiles à apprendre.</p>
+		<p>Ces phrases ont pour but d'apprendre du vocabulaire utile pour après aborder les règles grammaticales.</p>
+        <div id="score-container">Score : <span id="score">0</span>/ <span id="total">0</span></div>
+    </div>
+    
+	<div class="box exemple">
+        <h3>📘 Prielektrasilibong : Premier manuel interactif</h3>
+        <p>Le dernier manuel de l'Académie de la langue Solaryenne afin que tout le monde puisse apprendre le solaryen !</p>
+        <button onclick="goTo('..')" class="hbtn">Y aller</button>
+    </div>
+	
+	<div class="box retenir">
+        <h3>📌 À retenir</h3>
+        <p>La construction syntaxique d'une phrase en solaryen est similaire au français <i>(SOV)</i>, néanmoins l'usage de déclinaisons permet une forme plus libre.</p>
+    </div>
+    
+    <div class="box culture">
+        <h3>🎲 Le saviez-vous ?</h3>
+        <p>Le solaryen a 3 genres pour les pronoms, super facile à reconnaître :</p>
+        <ul>
+            <li>Si ça se termine en <b>"a" : neutre</b></li>
+            <li>Si ça se termine en <b>"é" : masculin</b></li>
+            <li>Si ça se termine en <b>"ï" : féminin</b></li>
+        </ul>
+    </div>
+    
+    <div class="box attention">
+        <h3>⚠️ Attention</h3>
+        <p>Le pronom <b>"lua" est multi-fonction</b> : il désigne le "ça" de "Comment ça va", mais il peut aussi être utilisé pour remplacer les "il" impersonnels comme dans "Il y a" (Lua habat)</p>
+    </div>
+
+    <div class="box exercise">
+        <h3>✏️ Exercice 1 : La présentation</h3>
+		<p>Mettez dans les bonnes cases les traductions suivantes : Ça va bien, et toi ? - Je parle un peu en solaryen - Je me prénomme Timoh - J'ai 18 ans - J'habite à Solarys</p>
+        <table class="vocabulary-table">
+            <thead>
+                <tr>
+                    <th>Solaryen</th>
+                    <th>Votre réponse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mé/Mï/Ma habas prikëridagariodyl.</td>
+                    <td class="interactif"><input type="text" data-correct="J'ai 18 ans" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Mé/Mï/Ma masas tanSolaryd.</td>
+                    <td class="interactif"><input type="text" data-correct="J'habite à Solarys" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Lua mosvadat, eu vé/vï/va ?</td>
+                    <td class="interactif"><input type="text" data-correct="Ça va bien, et toi ?" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Mé/Mï/Ma prinoméasma Timoh.</td>
+                    <td class="interactif"><input type="text" data-correct="Je me prénomme Timoh" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Mé/Mï/Ma nivokas tanlonSolaryd.</td>
+                    <td class="interactif"><input type="text" data-correct="Je parle un peu en solaryen" data-show-answer="true"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <hr>
+	
+	<div class="box retenir">
+        <h3>📌 À retenir</h3>
+        <p>Contrairement au français, l'inversion sujet/verbe n'est jamais fait.</p>
+        <p>De plus, une composante <i>(un suffixe)</i> est obligatoire sur le verbe conjugué pour les interrogatives <b>"-ka"</b></p>
+    </div>
+    
+    <div class="box exemple">
+        <h3>💡 Exemple</h3>
+        <p>La forme interrogative devient donc plus simple à former</p>
+        <p><i>"Mé nindas lyom." => "Vé nindaméka lyom ?"</i></p>
+    </div>
+
+	<div class="box exercise">
+        <h3>✏️ Exercice 2 : Les questions</h3>
+        <p>Mettez dans les bonnes cases les traductions suivantes : Comment ça va ? - Parles-tu en solaryen ? - Comment te prénommes-tu ? - Quel âge as-tu ? - Où habites-tu ?</p>
+        <table class="vocabulary-table">
+            <thead>
+                <tr>
+                    <th>Solaryen</th>
+                    <th>Votre réponse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Vé/Vï/Va masaméka ouod ?</td>
+                    <td class="interactif"><input type="text" data-correct="Où habites-tu ?" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Lua vadatka ?</td>
+                    <td class="interactif"><input type="text" data-correct="Comment ça va ?" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Vé/Vï/Va habaméka dagariodyl ?</td>
+                    <td class="interactif"><input type="text" data-correct="Quel âge as-tu ?" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Vé/Vï/Va prinoméaméka ?</td>
+                    <td class="interactif"><input type="text" data-correct="Comment te prénommes-tu ?" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Vé/Vï/Va vokaméka tanlonSolaryd ?</td>
+                    <td class="interactif"><input type="text" data-correct="Parles-tu en solaryen ?" data-show-answer="true"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="box revealable">
+        <h3>🧠 Pour aller plus loin</h3>
+        <p>Vous connaissez les pronoms solaryens ?</p>
+        <button onclick="toggleReveal(this)">Voir la réponse</button>
+        <div class="reveal-content">
+            <ul>
+                <li>Je = Mé mï ma</li>
+                <li>Tu/vous = Vé vï va</li>
+                <li>Il elle iel = Lé lï la</li>
+                <li>Nous = Gé gï ga</li>
+                <li>Ils elles iels = Loé loï loa</li>
+                <li>Ça = Lua</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="box culture">
+        <h3>🎲 Le saviez-vous ?</h3>
+        <p>Au lieu que ça soit le masculin qui l'emporte, dès lors qu'il y a un deux genres différents (rappel : le neutre est aussi pour tous les noms communs), c'est le neutre qui l'emporte.</p>
+    </div>
+
+    <hr>
+
+    <div class="box exercise">
+        <h3>✏️ Exercice 3 : La préparation à l'évaluation</h3>
+        <p>Mettez dans les cases votre réponse : Comment ça va ? - Mé/Mï/Ma habas prikëridagariodyl - Vé/Vï/Va prinoméaméka ? - Mé/Mï/Ma prinoméasma Timoh - Où habites-tu ?</p>
+        <table class="vocabulary-table">
+            <thead>
+                <tr>
+                    <th>Énoncé</th>
+                    <th>Votre réponse</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>J'ai 18 ans</td>
+                    <td class="interactif"><input type="text" data-correct="Mé/Mï/Ma habas prikëridagariodyl" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Je me prénomme Timoh</td>
+                    <td class="interactif"><input type="text" data-correct="Mé/Mï/Ma prinoméasma Timoh" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Lua vadatka ?</td>
+                    <td class="interactif"><input type="text" data-correct="Comment ça va ?" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Vé/Vï/Va masaméka ouod ?</td>
+                    <td class="interactif"><input type="text" data-correct="Où habites-tu ?" data-show-answer="true"/></td>
+                </tr>
+                <tr>
+                    <td>Comment te prénommes-tu ?</td>
+                    <td class="interactif"><input type="text" data-correct="Vé/Vï/Va prinoméaméka ?" data-show-answer="true"/></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <p style="text-align: center;"><button onclick="checkAnswers()">Vérifier mes réponses</button></p>
+
+    <footer>
+        © 2025 Etsolonsieur danlonSolaryl - Prielektrasilibong
+    </footer>
+
+    <script src="../../script.js"></script>
+</body>
+</html>
